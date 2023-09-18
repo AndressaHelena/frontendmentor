@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --primary-soft-blue:  hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+
+    --neutral-main-bg: hsl(217, 54%, 11%);
+    --neutral-card-bg: hsl(216, 50%, 16%);
+    --neutral-line: hsl(215, 32%, 60%);
+    --neutral-white:  hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--neutral-main-bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.main{
+    flex-direction: column;
+    
+    
+}
+
+.card{
+    width: 340px;
+    height: 580px;
+    background-color: var(--neutral-card-bg);
+    box-shadow: 0  1px 35px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    color: var(--neutral-line);
+}
+
+.image .principal{
+    
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        opacity: 50%;
+        filter: brightness(2);
+    }
+}
+
+.image .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .2s ease-in-out;
+    
+}
+.card .title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: var(--neutral-white);
+    cursor: pointer;
+    &:hover{
+        color: var(--primary-cyan);
+    }
+
+}
+
+.card .subtitle{
+    padding: 20px 0;
+    margin-left: 20px;
+    width: 300px;
+    line-height: 1.6;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 10px;
+}
+.flex-item{
+    display: inline-flex;
+}
+.flex-item:nth-child(1){
+    color: var(--primary-cyan);
+}
+.flex-item img{
+    padding-right: 5px;
+    
+}
+
+hr{
+    width: 300px;
+    margin: 5px 20px;
+}
+
+.contributions{
+    display: flex;
+    margin:20px;  
+    
+}
+.contributions img{
+    width: 30px;
+    margin: 0 15px 0;
+    border: solid 1px var(--neutral-white);
+    border-radius: 50%;
+    
+    
+}
+.contributions p {
+    margin-top: 5px;
+    & a{
+    color: var(--neutral-white);
+    text-decoration: none;
+    &:hover{
+        color: var(--primary-cyan);
+    }
+}
+}
+
+
+.footer{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    color: var(--primary-soft-blue);
+    
+}
+
+.footer a{
+    color: var(--neutral-line);
+    &:hover{
+        color: var(--primary-cyan)
+    }
+}
