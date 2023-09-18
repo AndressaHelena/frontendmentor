@@ -1,4 +1,4 @@
 # frontendmentor
 
-https://andressahelena.github.io/frontendmentor/NFTPreviewCard/index.html
+[a link]https://andressahelena.github.io/frontendmentor/NFTPreviewCard/index.html
 
