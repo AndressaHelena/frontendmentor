@@ -122,26 +122,11 @@ hr{
 .contributions p {
     margin-top: 5px;
     & a{
-    color: var(--neutral-white);
-    text-decoration: none;
-    &:hover{
-        color: var(--primary-cyan);
+        color: var(--neutral-white);
+        text-decoration: none;
+        &:hover{
+            color: var(--primary-cyan);
+        }
     }
 }
-}
 
-
-.footer{
-    text-align: center;
-    padding-top: 5px;
-    font-size: 12px;
-    color: var(--primary-soft-blue);
-    
-}
-
-.footer a{
-    color: var(--neutral-line);
-    &:hover{
-        color: var(--primary-cyan)
-    }
-}
