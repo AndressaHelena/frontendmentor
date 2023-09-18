@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main{
+    background-color: #d5e1ef;
+    font-family: 'Outfit';
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.card{
+    background-color: #ffff;
+    width: 300px;
+    height: 470px;
+    border-radius: 15px;
+    text-align: center; 
+    padding-top: 15px;
+    box-shadow: 0 30px 70px -40px #1F3251;
+}
+
+.card .image{
+    width: 270px;
+    height: 270px;
+    border-radius: 8px;
+}
+
+.card .title{
+    color: #1F3251;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 18px;
+    margin: 0px 15px;
+    
+}
+.card .subtitle { 
+    color: hsl(220, 15%, 55%);
+    margin: 15px 10px;
+    font-size: 16px;
+    font-weight: 400;   
+   
+}
+
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 80%;
+        height: 450px;
+        margin: 50px auto;
+        padding: 5px;
+    }
+    .card .image{
+        width: 90%;
+        height: 230px;
+        padding: 10px 0 0 0;
+        
+    }
+    
+}
